@@ -1,0 +1,11 @@
+- incident_id: INC-2025-0001
+  timestamp: 2025-01-15T09:42:00Z
+  severity: High
+  category: Configuration Error
+  affected_services: ["VPN", "Internal DNS"]
+  detection_method: Monitoring Alert
+  root_cause: Incorrect BGP prefix-list applied during a maintenance window caused route leaks to the WAN edge.
+  resolution: Rolled back the prefix-list to the previous working version. BGP sessions were reset to restore proper routing.
+  duration_minutes: 38
+  impact_summary: Around 1,200 users in EMEA were unable to access internal resources.
+  preventive_action: Implemented automated validation of prefix-list changes using CI/CD pipeline with peer-review enforcement.

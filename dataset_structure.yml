@@ -1,0 +1,11 @@
+- incident_id: Unique identifier
+  timestamp: ISO 8601 format
+  severity: [Low, Medium, High, Critical]
+  category: [Outage, Latency, Configuration Error, Hardware Failure, DDoS, Routing Issue, Maintenance, etc.]
+  affected_services: List of affected services (e.g., "VPN", "Email", "DNS", "Internet", "Datacenter X", etc.)
+  detection_method: [Monitoring Alert, User Report, Scheduled Audit, etc.]
+  root_cause: Human-readable explanation
+  resolution: Description of fix or mitigation
+  duration_minutes: Integer
+  impact_summary: Number of users affected, duration, and geography if applicable
+  preventive_action: Lessons learned or actions taken to prevent recurrence
